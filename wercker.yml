@@ -21,7 +21,4 @@ deploy:
     - script:
         name: npm publish
         code: |
-            echo _auth = "${NPM_AUTH_TOKEN}" > $HOME/.npmrc
-            echo email = "${NPM_EMAIL}" >> $HOME/.npmrc
-            yes '' | npm adduser
-            npm publish --access public
+            npm whoami
