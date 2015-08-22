@@ -23,4 +23,5 @@ deploy:
         code: |
             echo _auth = "${NPM_AUTH_TOKEN}" > .npmrc
             echo email = "${NPM_EMAIL}" >> .npmrc
+            yes '' | npm adduser
             npm publish --access public
