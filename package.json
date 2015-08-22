@@ -1,0 +1,33 @@
+{
+  "name": "@starefossen/wercker-npm-publish",
+  "version": "1.0.0",
+  "description": "Publishing package to NPM through Wercker CI",
+  "main": "index.js",
+  "scripts": {
+    "hint": "jshint index.js test.js",
+    "test": "mocha test.js",
+    "watch": "mocha test.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Starefossen/wercker-npm-publish.git"
+  },
+  "keywords": [
+    "wercker",
+    "ci",
+    "test",
+    "build",
+    "publish"
+  ],
+  "author": "Hans Kristian Flaatten <hans.kristian.flaaten@turistforeningen.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Starefossen/wercker-npm-publish/issues"
+  },
+  "homepage": "https://github.com/Starefossen/wercker-npm-publish#readme",
+  "devDependencies": {
+    "express": "^4.13.3",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5"
+  }
+}
